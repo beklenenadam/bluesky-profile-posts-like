@@ -8,7 +8,7 @@ pip install atproto
 ```
 
 Edit the username and password on line 15 of the code line according to you.
- ```
+ ```python
 agent.login('bluesky-handle', 'bluesky-password')
 ```
 
