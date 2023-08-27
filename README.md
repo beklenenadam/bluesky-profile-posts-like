@@ -7,6 +7,11 @@
 pip install atproto
 ```
 
+Edit the username and password on line 15 of the code line according to you.
+ ```
+agent.login('bluesky-handle', 'bluesky-password')
+```
+
 Run command
  ```
 py like.py
