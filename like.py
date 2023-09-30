@@ -13,7 +13,7 @@ def main(client: Client, handle: str):
         try:
             client.like(models.create_strong_ref(feed_view.post))
         except Exception as e:
-            print(f"Hata: {e}")
+            print(f"Error: {e}")
             time.sleep(60)
             client = recreate_session()
 
@@ -23,7 +23,7 @@ def create_session():
     return at_client
 
 def recreate_session():
-    print("Yeniden oturum oluşturuluyor...")
+    print("Recreating the session...")
     time.sleep(60)
     return create_session()
 
